@@ -1,8 +1,8 @@
 import random
 
-board = ["3_", "_7", "_1",
-         "4_", "_8", "5_",
-         "_2", "_6", "9_",]
+board = ["1_", "2_", "3_",
+        "4_", "5_", "6_",
+        "7_", "8_", "9_",]
 
 currentPlayer = "x"
 winner = None
@@ -62,7 +62,7 @@ def checkDiag(board):
     
 def checkTie(board):
     global gameRunning
-    if "_" not in board:
+    if "2_" not in board:
         printBoard(board)
         print("it is a tie!")
         gameRunning = False
